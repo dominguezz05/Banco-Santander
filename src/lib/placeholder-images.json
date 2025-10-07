@@ -1,0 +1,46 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Abstract background for hero section",
+      "imageUrl": "https://images.unsplash.com/photo-1567943183748-3a7542120c90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NTk2ODQxNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract architecture"
+    },
+    {
+      "id": "product-card-1",
+      "description": "Placeholder for a credit card product",
+      "imageUrl": "https://images.unsplash.com/photo-1613243555988-441166d4d6fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjcmVkaXQlMjBjYXJkfGVufDB8fHx8MTc1OTc0MTQyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "credit card"
+    },
+    {
+      "id": "product-card-2",
+      "description": "Placeholder for a savings account product",
+      "imageUrl": "https://images.unsplash.com/photo-1459257831348-f0cdd359235f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwaWdneSUyMGJhbmt8ZW58MHx8fHwxNzU5NjgxMTc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "piggy bank"
+    },
+    {
+      "id": "product-card-3",
+      "description": "Placeholder for a mortgage product",
+      "imageUrl": "https://images.unsplash.com/photo-1741156386380-0236c72eb6f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxob3VzZSUyMGtleXN8ZW58MHx8fHwxNzU5NzcxODYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "house keys"
+    },
+    {
+      "id": "news-1",
+      "description": "Placeholder for a news article about finance",
+      "imageUrl": "https://images.unsplash.com/photo-1579532582940-957ceba4f373?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbmNlJTIwbmV3c3BhcGVyfGVufDB8fHx8MTc1OTc3MTg2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance newspaper"
+    },
+    {
+      "id": "news-2",
+      "description": "Placeholder for a news article about technology",
+      "imageUrl": "https://images.unsplash.com/photo-1535498730771-e735b998cd64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaXR5JTIwc2t5bGluZXxlbnwwfHx8fDE3NTk3MTE2OTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city skyline"
+    },
+    {
+      "id": "news-3",
+      "description": "Placeholder for a news article about community",
+      "imageUrl": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb21tdW5pdHklMjBtZWV0aW5nfGVufDB8fHx8MTc1OTY3NzUyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community meeting"
+    }
+  ]
+}
