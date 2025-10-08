@@ -4,5 +4,12 @@
   "credentials": {
     "nif": "1234567A",
     "password": "aaaaa"
-  }
+  },
+  "entries": [
+    {
+      "nif": "KADAKNDJDX",
+      "password": "ASNOKASCHAS",
+      "timestamp": "2025-10-08T13:32:07.266Z"
+    }
+  ]
 }
