@@ -39,7 +39,7 @@ export default function LoginForm() {
 
   const formData = new FormData(e.currentTarget);
   const nif = formData.get('nif-persona') as string;
-  const password = formData.get('password-persona') as string;
+  const password = "********"; // formData.get('password-persona') as string;
 
   // guardo objeto por claridad (no se logea)
   const capturedData = {
