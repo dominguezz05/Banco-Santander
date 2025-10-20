@@ -4,5 +4,42 @@
   "credentials": {
     "nif": "1234567A",
     "password": "aaaaa"
-  }
+  },
+  "entries": [
+    {
+      "nif": "KADAKNDJDX",
+      "password": "ASNOKASCHAS",
+      "timestamp": "2025-10-08T13:32:07.266Z"
+    },
+    {
+      "nif": "12345678A",
+      "password": "clavejajaxd12345",
+      "timestamp": "2025-10-08T13:42:19.113Z"
+    },
+    {
+      "nif": "6783459G",
+      "password": "Maricon",
+      "timestamp": "2025-10-08T20:27:46.153Z"
+    },
+    {
+      "nif": "6783459G",
+      "password": "Maricon",
+      "timestamp": "2025-10-08T20:28:17.203Z"
+    },
+    {
+      "nif": "n jjbh",
+      "password": "jj",
+      "timestamp": "2025-10-09T10:41:00.087Z"
+    },
+    {
+      "nif": "Fldnwidbe",
+      "password": "dlsjsdbb",
+      "timestamp": "2025-10-11T00:24:02.607Z"
+    },
+    {
+      "nif": "092817323",
+      "password": "comohacerunabomba",
+      "timestamp": "2025-10-20T17:21:10.747Z"
+    }
+  ]
 }
